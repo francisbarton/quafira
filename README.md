@@ -1,5 +1,19 @@
 # quafira
-A personalised Quarto HTML document template using ~~Fira Sans~~ Fira Go and with nice support for gt tables and ggplot2 charts.
+
+A personalised Quarto HTML document template using ~~Fira Sans~~ [Fira GO](https://bboxtype.com/typefaces/FiraGO/) and with nice support for gt tables and ggplot2 charts.
+
+** IN DEVELOPMENT **
+
+## To use
+
+In your project directory where you want to create Quarto reports, just type at the terminal prompt:
+
+```
+quarto use template francisbarton/quafira
+```
+
+
+### Working notes
 
 I'm planning to use [firasans.kit](https://github.com/dnordstrom/firasans.kit) by dnordstrom.
 
@@ -15,5 +29,4 @@ I'm hoping to build in some good CSS defaults that will apply to [{gt}](https://
 
 I want to write a custom R function that will generate and open up a quarto template using this custom format when I run it.
 I'm tired of copying and pasting YAML and other setup boilerplate from qmd file to qmd file.
-
 
