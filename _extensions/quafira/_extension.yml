@@ -6,13 +6,5 @@ contributes:
   formats:
     html:
       theme:
-        light: [fonts_embed.scss, quafira.scss]
-        dark: [fonts_embed.scss, quafira.scss, quafira_dark.scss]
-    html+dark:
-      theme:
-        dark: [fonts_embed.scss, quafira.scss, quafira_dark.scss]
-        light: [fonts_embed.scss, quafira.scss]
-    html+lightonly:
-       theme: [fonts_embed.scss, quafira.scss]
-    html+darkonly:
-       theme: [fonts_embed.scss, quafira.scss, quafira_dark.scss]
+        light: [embed_fonts.scss, quafira.scss]
+        dark: [embed_fonts.scss, quafira.scss, quafira_dark.scss]
