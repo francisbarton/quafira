@@ -1,0 +1,29 @@
+---
+title: ""
+author: ""
+date: today
+lang: en-GB
+format:
+  quafira: html
+self-contained: true
+fig-dpi: 96
+fig-height: 6
+fig-width: 9.72
+out-width: 100%
+toc: true
+---
+
+## Introduction
+
+This is a default template for the `quafira` custom quarto format.
+
+You can learn more about `quafira` in its
+[Github repository](https://github.com/francisbarton/quafira)
+
+quafira is based on [bookup](https://github.com/juba/bookup-html) by Julien
+Barnier.
+Thanks Julien!
+
+You can learn more about controlling the appearance of HTML output at the
+[quarto website](https://quarto.org/docs/output-formats/html-basics.html).
+
