@@ -1,16 +1,14 @@
 ---
-title: ""
+title: "Quafira"
 author: ""
 date: today
 lang: en-GB
-format:
-  quafira: html
+format: quafira-html
 self-contained: true
 fig-dpi: 96
 fig-height: 6
 fig-width: 9.72
 out-width: 100%
-toc: true
 ---
 
 ## Introduction
