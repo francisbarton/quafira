@@ -1,8 +1,8 @@
 /*-- scss:defaults --*/
 
-$font-family-sans-serif: "FiraGO", "Fira Go", "Fira Sans", sans-serif;
+$font-family-sans-serif: "FiraGO", "Fira Sans", sans-serif;
 $font-family-monospace: "Fira Mono", monospace;
-$font-size-root: 16px;// could make it 14px
+$font-size-root: 16px;
 
 /* maybe use harmonic sizing (via Andy Bell?) to get these tuned just right */
 $h1-font-size: 2.2em;
@@ -11,9 +11,10 @@ $h3-font-size: 1.5em;
 $h4-font-size: 1.25em;
 
 $headings-font-weight: 700 !default;
+$display-font-weight: 400 !default;
 
-$grey24: "#3d3d3d" !default;
-$linen: "#faf0e6";
+$grey24: #3d3d3d !default;
+$linen: #faf0e6;
 
 $body-color: $grey24 !default;
 
@@ -34,6 +35,7 @@ $grid-column-gutter-width: 1.5rem !default;
 $body-color:                $grey24 !default;
 $body-emphasis-color:       $grey24 !default;
 $body-bg:                   $linen !default;
+$code-block-bg:             $linen !default;
 
 
 /*-- scss:rules --*/
@@ -348,7 +350,7 @@ p {
     h2,
     h3,
     h4 {
-        font-family: "Roboto Slab", $font-family-sans-serif;
+        font-family: $font-family-sans-serif;
         line-height: 1.25;
         margin-top: 1.275em;
         margin-bottom: 0.85em;
@@ -581,7 +583,7 @@ p {
 
         span.kw,
         span.cf {
-            font-weight: 500;
+            font-weight: 400;
         }
 
         span.kw,
@@ -723,7 +725,7 @@ p {
     }
 
     .leaflet .leaflet-control-container a {
-        background-color: #FFF;
+        background-color: #fff;
         color: #000;
     }
 
