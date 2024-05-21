@@ -9,7 +9,7 @@ A personalised Quarto HTML document template using ~~Fira Sans~~ [Fira GO](https
 In your project directory where you want to create Quarto reports, just type at the terminal prompt:
 
 ```
-quarto use template francisbarton/quafira
+quarto add francisbarton/quafira
 ```
 
 
