@@ -35,3 +35,8 @@ I'm hoping to build in some good CSS defaults that will apply to [{gt}](https://
 I want to write a custom R function that will generate and open up a quarto template using this custom format when I run it.
 I'm tired of copying and pasting YAML and other setup boilerplate from qmd file to qmd file.
 
+## NEWS
+
+### 30 May 2024
+
+Changing back from Fira GO to Fira Sans Compressed indeed reduces `embed_fonts.scss` from 1.31MB to 865KB, nearly a 50% reduction.
