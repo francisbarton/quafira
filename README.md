@@ -1,6 +1,6 @@
 # quafira
 
-A personalised Quarto HTML document template using ~~Fira Sans~~ [Fira GO](https://bboxtype.com/typefaces/FiraGO/) and with nice support for gt tables and ggplot2 charts.
+A personalised Quarto HTML document template using [Fira Sans](https://github.com/bBoxType/FiraSans/) and with nice support (to come!) for gt tables and ggplot2 charts.
 
 ** IN DEVELOPMENT **
 
@@ -15,13 +15,18 @@ quarto add francisbarton/quafira
 
 ### Working notes
 
-I'm planning to use [firasans.kit](https://github.com/dnordstrom/firasans.kit) by dnordstrom.
+I've used a data-uri strategy for embedding the fonts inspired by [firasans.kit](https://github.com/dnordstrom/firasans.kit) by dnordstrom.
 
-firasans.kit is 11 years old and I'm wondering if it is better - if it even makes any difference - to use more recent versions of Fira.
+firasans.kit is 11 years old and I've found a more recent (in fact the latest) version (v4.3) of Fira Sans in WOFF2 format on GitHub.
+I've also used the "compressed" version of the files to reduce size, at the cost of potentially reducing the quality of the font render.
+For my purposes I doubt this will matter.
+Using the more recent version also may not make any noticeable difference but it makes sense to use it.
+And it is the last version of Fira Sans so it is stable by default.
 
-I found [woff2base](https://hellogreg.github.io/woff2base/) and will try to use that for converting the current Fira web font to a base64 uri string.
+I did consider using [FiraGO](https://github.com/bBoxType/FiraGO) (the successor to Fira Sans, with broader internationalisation support (it supports Arabic, Georgian and other scripts)), but I suspect the file size would be larger as there are more character sets supported that I am unlikely to ever make use of, realistically.
 
-[FiraGO](https://github.com/bBoxType/FiraGO) is Fira Sans but with broader internationalisation support (supports Arabic, Georgian and other scripts).
+
+I have used [woff2base](https://hellogreg.github.io/woff2base/) to convert the current Fira web font to a base64 uri string.
 
 I think [bookup-html](https://github.com/juba/bookup-html) by juba is quite close to what I want to achieve.
 
