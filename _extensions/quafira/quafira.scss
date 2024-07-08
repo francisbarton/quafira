@@ -321,6 +321,10 @@ p {
         color: var(--bs-body-color);
     }
 
+    p.subtitle {
+        font-weight: 400;
+    }
+
     a,
     .btn-link {
         color: var(--link-color);
@@ -607,17 +611,18 @@ p {
     ul:not(.nav) {
         margin: 0 0 1.5em 0;
         padding: 0 0 0 2em;
-        list-style-type: none;
+        list-style-type: disc;
     }
 
     ul:not(.nav)>li {
-        text-indent: -1.1em;
+        // text-indent: -1.1em;
         margin-bottom: .5em;
     }
 
-    ul:not(.nav)>li::before {
-        content: "— ";
-    }
+    // ugh why would you do this
+    // ul:not(.nav)>li::before {
+    //     content: "— ";
+    // }
 
 
 
