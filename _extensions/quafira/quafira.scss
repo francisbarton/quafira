@@ -13,10 +13,9 @@ $h4-font-size: 1.25em;
 $headings-font-weight: 700 !default;
 $display-font-weight: 400 !default;
 
-$grey24: #3d3d3d !default;
+$grey24: #3d3d3d;
+$grey85: #d9d9d9;
 $linen: #faf0e6;
-
-$body-color: $grey24 !default;
 
 
 // The left hand sidebar
@@ -42,6 +41,7 @@ $code-block-bg:             $linen !default;
 
 :root {
     --bs-body-font-weight: 400;
+    --bs-body-font-size: 1em;
     --link-color: #4183C4;
 
     --toc-active-color: #0d6efd;
@@ -55,7 +55,7 @@ $code-block-bg:             $linen !default;
     --sidebar-input-border: #a1a7ac;
     --sidebar-form-bg: transparent;
 
-    --figure-img-border: 1px solid #ddd;
+    --figure-img-border: 2px solid #5a5f72 !important; // was 1px #ddd
     --figure-img-shadow: 1px 1px 10px #ddd;
 
     --code-block-color: #555;
@@ -89,13 +89,30 @@ $code-block-bg:             $linen !default;
     --listing-card-border: #a1a7ac;
     --listing-card-shadow: rgba(0, 0, 0, 0.04);
     --listing-card-shadow-hover: rgba(0, 0, 0, 0.1);
+
+    --gt-font-colour: #{$grey24};
+    --gt-table-bg-colour: #{$linen};
+    --gt-group-heading-colour: #{$grey24};
+    --gt-group-heading-bg-colour: #{$grey85};
+    
+    --gt-font-size: 14px;
+    --gt-title-font-size: 1.4em;
+    --gt-title-font-weight: #{$headings-font-weight};
+    --gt-subtitle-font-size: 1em;
+    --gt-subtitle-font-weight: #{$display-font-weight};
+    --gt-colhead-font-size: 1.1em;
+
 }
 
 .table,
 .dataTable {
     --bs-table-accent-bg: rgba(0, 0, 0, 0);
     --bs-table-striped-bg: rgba(0, 0, 0, 0.03);
+
 }
+
+
+
 
 /* Grid */
 
@@ -471,6 +488,55 @@ p {
         margin-left: 0;
         margin-right: 0;
     }
+
+    /* {gt} */
+
+    table.gt_table {
+
+        font-family: $font-family-sans-serif !important;
+        font-size: var(--gt-font-size) !important;
+        color: var(--gt-font-colour) !important;
+        background-color: var(--gt-table-bg-colour) !important;
+        
+        .gt_heading, .gt_title, .gt_subtitle, .gt_col_heading,
+        .gt_summary_row, .gt_stub, .gt_sourcenote {
+            color: var(--gt-font-colour) !important;
+            background-color: var(--gt-table-bg-colour) !important;
+        }
+    
+        .gt_title {
+            font-size: var(--gt-title-font-size) !important;
+            font-weight: var(--gt-title-font-weight) !important;
+            text-align: left !important;
+        }
+        
+        .gt_subtitle {
+            font-size: var(--gt-font-size) !important;
+            font-weight: var(--gt-subtitle-font-weight) !important;
+            text-align: left !important;
+        }
+        
+        .gt_col_heading, .gt_group_heading_row, .gt_group_heading {
+            font-size: var(--gt-colhead-font-size) !important;
+            font-weight: var(--gt-title-font-weight) !important;
+        }
+        
+        .gt_group_heading {
+            color: var(--gt-group-heading-colour) !important;
+            background-color: var(--gt-group-heading-bg-colour) !important;
+            // padding: .3em 1em !important;
+        }
+        
+        .gt_summary_row {
+            font-weight: var(--gt-title-font-weight) !important;
+        }
+        
+        .gt_sourcenote {
+            text-align: right !important;
+            font-style: italic !important;
+        }
+    }
+
 
     /* DT */
 
