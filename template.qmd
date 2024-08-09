@@ -1,14 +1,18 @@
 ---
-title: "Quafira"
-author: ""
+title: Quafira report
+author:
+  name: Fran Barton
+  email: francis.barton@nhs.net
 date: today
 lang: en-GB
 format: quafira-html
-self-contained: true
-fig-dpi: 96
-fig-height: 6
-fig-width: 9.72
-out-width: 100%
+embed-resources: true
+fig-dpi: 144
+fig-height: 10
+fig-width: 16.18
+fig-responsive: true
+lightbox: true
+out-width: 92%
 ---
 
 ## Introduction
